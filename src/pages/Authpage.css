@@ -1,0 +1,117 @@
+.auth-page {
+    background: radial-gradient(ellipse at 30% 20%, #1e241f 0%, #050805 60%, #020302 100%);
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.auth-page::before {
+    content: "";
+    position: absolute;
+    inset: 0; /* top,left,right,bottom = 0 */
+    background: repeating-linear-gradient(45deg, transparent, transparent 50px, rgba(6, 223, 47, 0.1) 50px, rgb(175, 42, 42) 51px);
+}
+
+.box-container {
+    /* border: 1px solid whitesmoke; */
+    background: linear-gradient(135deg, rgba(206, 231, 24, 0.5) 0%, rgba(5, 20, 10, 0.95) 100%);
+    padding: 35px;
+    max-width: 350px;
+    width: 100%;
+    border-radius: 3px;
+    position: relative;
+}
+
+.box-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgb(41, 67, 231), transparent);
+}
+
+.header {
+    text-align: center;
+}
+
+.header .logo {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.header h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header .text {
+    padding-top: 5px;
+    margin-bottom: 30px;
+    font-size: small;
+    color: rgb(170, 184, 184);
+    font-style: italic;
+}
+
+.auth-buttons {
+    display: flex;
+}
+
+.auth-buttons .authBtn {
+    position: relative;
+    flex: 1; /* flex-grow: 1; flex-shrink: 1; flex-basis: 0; , 1 1 0 */
+    border: none;
+    background-color: inherit;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.input-group {
+    margin-top: 10px;
+}
+
+.input-group label {
+    display: block;
+    font-size: xx-small;
+    margin-top: 15px;
+}
+
+.input-group input {
+    padding: 5px;
+    font-size: 10px;
+    width: 100%;
+    height: 30px;
+}
+
+.input-group .submitBtn {
+    border: none;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(206, 231, 24, 0.8);
+    color: white;
+}
+
+.auth-buttons .authBtn.active {
+    color: #ffffff;
+}
+
+.auth-buttons .authBtn.active::after {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: blue;
+}
+
+
