@@ -1,0 +1,32 @@
+.g-header {
+  display: flex;
+  padding: 10px 20px;
+  justify-content: space-between;
+  border: 1px solid white;
+  /*background-color: grey;*/
+}
+
+.g-header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.g-header-left p {
+  font-size: 25px;
+}
+
+.g-header .g-star {
+  width: 30px;
+}
+
+.g-header img {
+  width: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.g-header .g-btn {
+  /*padding:  10px;*/
+  /*padding: 5px;*/
+}

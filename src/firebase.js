@@ -14,8 +14,8 @@ import {
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBjacOww1dxICMQtt_21C4J4JbP0Xe2k-M",
-  authDomain: "gallery-781fb.firebaseapp.com",
+  apiKey: import.meta.env.apiKey,
+  authDomain: import.meta.env.domain,
   projectId: "gallery-781fb",
   storageBucket: "gallery-781fb.firebasestorage.app",
   messagingSenderId: "90381316003",

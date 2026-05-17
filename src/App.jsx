@@ -12,15 +12,15 @@ export default function App() {
   // user = "samuel"
 
   useEffect(() => {
-    const unsub = onAuthStateChanged(auth, (currentUer) => {
-      setUser(currentUer);
-    });
-    return () => unsub();
-  }, []);
+    const unsub = onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser)
+    })
+    return () => unsub()
+  }, [])
 
   async function onSignOut() {
-    await signOut(auth);
-    setUser(null);
+    await signOut(auth)
+    setUser(null)
   }
 
   return (
